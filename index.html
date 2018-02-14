@@ -457,6 +457,19 @@
 		</div>
 	</div>
 </div>
+<div class="row" style="background-image: linear-gradient(90deg,#16222A,#3A6073);padding-top: 20px;padding-bottom: 20px;">
+	<div class="col-md-6">
+		<h3 class="text-center" style="color: white;font-size: 2.3rem">Begin your career with us</h3>
+	</div>
+	<div class="col-md-6">
+		<div class="flexit" style="display: flex;justify-content: center;">
+			<a id="demo01" href="#animatedModal"><button class="btn btn-default" style="color: black;margin-top: 15px;border-radius: 1.5rem;padding-top:8px;padding-bottom:8px">Click here to view the placement bronchure</button></a>
+			
+			</div>
+	
+	</div>
+</div>
+
 <div class="row">
 		<h3 class="heading" style="color:#013e5a;">Founders <i class="fas fa-users" aria-hidden="true"></i></h3>
  <!-- Fourth row start Founders and directorssection -->
@@ -618,7 +631,17 @@
             </div> <!-- end card-container -->
         </div> <!-- end col-sm-3 -->
     
-
+<div id="animatedModal">
+        <!--THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID  class="close-animatedModal" -->
+        <div class="close-animatedModal"> 
+        	close modal
+        </div>
+            
+        <div class="modal-content">
+                  <!--Your modal content goes here-->
+                  <p>dgjndsjkgnsjdgbjb Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae velit illo, dicta fugit necessitatibus aliquid doloribus dolorem. Dolore unde ex illo sint est saepe iure suscipit qui, sed autem, veritatis.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta, qui! Unde nam facilis optio dolorum quas, tenetur error repellat! Cum sapiente dolorum, tenetur consequuntur excepturi incidunt? Distinctio ex, velit illum? lorem</p>
+        </div>
+</div>
 
   <footer id="footers">
   <div class="container"> 
@@ -663,6 +686,11 @@
    <script
   src="jquery-3.2.1.min.js"></script>
  <script src="particles.min.js"></script>
+
+ <script src="animatedModal.min.js"></script>
+  <script>
+  $("#demo01").animatedModal();
+</script>
 
   <script type="text/javascript" src="ticker/jquery.easy-ticker.min.js"></script>
 
