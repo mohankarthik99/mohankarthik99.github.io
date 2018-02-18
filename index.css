@@ -247,7 +247,7 @@ h3#why.heading{
     }
 .placed{
   color: black;    padding: 25px 0;color: black;width: 100%;display: block;text-align: center;text-decoration: none;border-radius: 30px;box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);cursor: pointer;background: white;
-   background-color: white;line-height: 1;transition: all 0.3s ease-in-out;
+   background-color: white;transition: all 0.3s ease-in-out;
 }
 .placed:hover{
 background: #000;
@@ -479,6 +479,25 @@ Moto color
       -ms-transform: rotate(90deg);
        -o-transform: rotate(90deg);
           transform: rotate(90deg);
+}
+.pb{
+  text-align: center;
+  background: black;
+  color: white;
+  display: block;
+  padding: 30px 0;
+  -webkit-transition: all .5s ease-in;
+     -moz-transition: all .5s ease-in;
+      -ms-transition: all .5s ease-in;
+       -o-transition: all .5s ease-in;
+          transition: all .5s ease-in;
+}
+.pb:hover{
+  background:white;
+  color: black;
+}
+.mainwrapper1 li a{
+  display:inline-block;
 }
 
 /* front pane, placed above back */
@@ -940,7 +959,10 @@ animation: spin 1.5s linear infinite;
 }
 
 
-
+.fawkes{
+  width: 150px;
+  height: 150px;
+}
 
 @keyframes spin {
     0%   {
@@ -1173,8 +1195,14 @@ transition-duration: 0.2s;
 }
  }
 
- 
-    body {
+ @media(max-width: 364px){
+
+#fawkes{
+  width: 90px;
+  height: 90px;
+}   
+ }
+  body {
   padding-top:0%;
 }
 
@@ -1182,7 +1210,7 @@ transition-duration: 0.2s;
   position: fixed;
   top: 0;
   bottom: 0;
-  width: 200px;
+  width: 250px;
   min-height: 100vh;
   overflow-y: scroll;
   -webkit-overflow-scrolling: touch;
