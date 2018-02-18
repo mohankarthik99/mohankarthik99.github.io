@@ -223,35 +223,32 @@
     <li data-target="#carousel-example-generic" data-slide-to="4"></li>
     <li data-target="#carousel-example-generic" data-slide-to="5"></li>
     <li data-target="#carousel-example-generic" data-slide-to="6"></li>
-    <li data-target="#carousel-example-generic" data-slide-to="7"></li>
 
         
   </ol>
 
   <!-- Wrapper for slides -->
   <div class="carousel-inner" role="listbox">
-    <div class="item active" id="col1">
-     <a href="https://placeholder.com"><img src="images/col6.png"></a>
-    </div>
-    <div class="item" id="col2">
+
+    <div class="item" id="col1">
 <a href="https://placeholder.com"><img src="images/col2.png"></a>
     </div>
-       <div class="item" id="col3">
+       <div class="item" id="col2">
 <a href="https://placeholder.com"><img src="images/col3.png"></a>
     </div>
-       <div class="item" id="col4">
+       <div class="item" id="col3">
 <a href="https://placeholder.com"><img src="images/col4.png"></a>
     </div>
-       <div class="item" id="col5">
+       <div class="item" id="col4">
 <a href="https://placeholder.com"><img src="images/col5.png"></a>
     </div>
-       <div class="item" id="col6">
+       <div class="item" id="col5">
 <a href="https://placeholder.com"><img src="images/col6.png"></a>
     </div>
-       <div class="item" id="col7">
+       <div class="item" id="col6">
 <a href="https://placeholder.com"><img src="images/col7.png"></a>
     </div>
-       <div class="item" id="col8">
+       <div class="item" id="col7">
 <a href="https://placeholder.com"><img src="images/col8.png"></a>
     </div>
       </div>
@@ -325,7 +322,7 @@
    </div>
  </div>
 <div class="row">
-		<div class="col-md-4 seccol animated  zoomIn" style="animation-delay:2.4s">
+		<div class="col-md-4 col-sm-6 seccol animated  zoomIn" style="animation-delay:2.4s">
 		<h3 class="heading">Students corner <i class="fas fa-user-circle" aria-hidden="true"></i></h3>
         <ul class="fa-ul">
        <li><i class="fa-li fas fa-square"></i> We don't tolerate ragging in our College...</li>
@@ -344,7 +341,7 @@
 
         </ul>
 		</div>
-	<div class="col-md-4 animated thirdcol zoomIn" style="animation-delay: 2.5s">
+	<div class="col-md-4 col-sm-6 animated thirdcol zoomIn" style="animation-delay: 2.5s">
 		<h3 class="heading">Campus News <i class="fas fa-newspaper" aria-hidden="true"></i></h3>
 		<div class="anouncements ticker2">
 			<ul class="fa-ul newnews">
@@ -363,7 +360,7 @@
 
 	</div>
 
-	<div class="col-md-4  clearfix animated zoomIn" style="animation-delay: 2.6s">
+	<div class="col-md-4 col-sm-12 clearfix animated zoomIn" style="animation-delay: 2.6s">
 		<h3 class="heading" style="color:#013e5a;">Our Toppers <i class="fas fa-graduation-cap" aria-hidden="true"></i></h3>
 
 		 <div class="row-fluid">
@@ -744,7 +741,6 @@
 <script type="text/javascript" src="slideout/dist/slideout.js"></script>
   <script type="text/javascript" src="bootstrap.min.js"></script>
  <script>
-	
    var slideout = new Slideout({
   'panel': document.getElementById('panel'),
   'menu': document.getElementById('menu'),
@@ -823,7 +819,7 @@ slideout.on('close', function () {
     },4000);
 
      $('#carousel-example-generic').carousel({
-  interval: 7000,
+  interval: 4000,
   pause:"hover/Click"
   
 })
