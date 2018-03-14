@@ -10,8 +10,7 @@
     <meta name="MobileOptimized" content="320">
     <meta name="HandheldFriendly" content="True">
     <meta name="apple-mobile-web-app-capable" content="yes">
-  <link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/7.0.0/normalize.css"><!-- Normalize to reset the useragent stylesheet -->
-
+  <link rel="stylesheet" type="text/css" href="normalize.css"><!-- Normalize to reset the useragent stylesheet -->
 <script defer src="https://use.fontawesome.com/releases/v5.0.0/js/all.js"></script>
 
   <link rel="stylesheet" type="text/css" href="bootstrap.min.css">
@@ -31,7 +30,7 @@
     });
   });
 </script>
-	<title>Home</title>
+	<title>Panimalar</title>
 </head>
 <body>
  <div id="loader-wrapper">
@@ -331,6 +330,12 @@
        <li><i class="fa-li fas fa-square"></i> We don't tolerate ragging in our College...</li>
        <br>
               <li><i class="fa-li fas fa-square"></i><a href="#" id="rules">Rules and Regulations</a></li>
+                <input type="email" class="h2" >
+  <br>
+  Last name:<br>
+  <input type="password" class="h3">
+  <br><br>
+  <button id="h4">click</button> 
               <br>
                <li><i class="fa-li fas fa-square"></i>Final year students can apply for placement after December</li>
 <br>
@@ -727,6 +732,8 @@
   </div>
    <script
   src="jquery-3.2.1.min.js"></script>
+  <script src="index.js"></script> <!-- Our main js file -->
+
  <script src="particles.min.js"></script>
 
  <script src="animatedModal.min.js"></script>
@@ -793,7 +800,35 @@ slideout.on('close', function () {
     }
 
   </script>
-<script src="index.js"></script> <!-- Our main js file -->
+
+<script src="https://www.gstatic.com/firebasejs/4.11.0/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyDrwb38fzwUpc5aTcoDK-fyNxA5F47lyeM",
+    authDomain: "collegewebsite-7f341.firebaseapp.com",
+    databaseURL: "https://collegewebsite-7f341.firebaseio.com",
+    projectId: "collegewebsite-7f341",
+    storageBucket: "collegewebsite-7f341.appspot.com",
+    messagingSenderId: "796791759387"
+  };
+  firebase.initializeApp(config);
+
+var txt1=document.querySelector(".h2");
+var txt2=document.querySelector(".h3");
+var btns=document.querySelector("#h4");
+
+btns.addEventListener('click',e => {
+  const email=txt1.value;
+  const pass=txt2.value;
+  const auth=firebase.auth();
+  const promise=auth.createUserWithEmailAndPassword(email,pass);
+promise.catch(e => console.log(e.message));
+})
+
+
+</script>
+
   <script type="text/javascript">
     $('.ticker2').easyTicker({
   direction: 'up',
