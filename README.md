@@ -3,4 +3,4 @@ Panimalar polytechnic website
 
 Site developed for Panimalar polytechnic college 
 
-<a href="www.pptc.in"></a>
+<a href="www.pptc.in">Click here to visit</a>
